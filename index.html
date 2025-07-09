@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>XPTV 頻道清單</title>
+    <style>
+        body { font-family: sans-serif; background: #f5f5f5; padding: 2rem; }
+        .channel { background: white; margin: 1rem 0; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .channel img { height: 40px; vertical-align: middle; margin-right: 10px; }
+        .channel a { font-size: 1.2rem; text-decoration: none; color: #0077cc; }
+    </style>
+</head>
+<body>
+    <h1>📺 XPTV 頻道清單</h1>
+    <div id="vod-list">載入中...</div>
+
+    <script>
+        fetch('https://raw.githubusercontent.com/fangkuia/XPTV/main/CMS/TV.json')
+            .then(res => res.json())
+            .then(data => {
+                const container = document.getElementById('vod-list');
+                container.innerHTML = "";
+                data.forEach(item => {
+                    const div = document.createElement("div");
+                    div.className = "channel";
+                    div.innerHTML = `
+                        <img src="${item.logo || ''}" onerror="this.style.display='none'">
+                        <a href="${item.url}" target="_blank">${item.name}</a>
+                    `;
+                    container.appendChild(div);
+                });
+            })
+            .catch(err => {
+                document.getElementById('vod-list').innerText = "載入失敗：" + err;
+            });
+    </script>
+</body>
+</html>
