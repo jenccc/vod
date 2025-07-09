@@ -1,0 +1,257 @@
+{
+  "class": [
+    "主流",
+    "腐剧/BL",
+    "國產/熱門",
+    "影視綜合",
+    "動漫/綜藝",
+    "其他"
+  ],
+  "list": [
+    {
+      "vod_id": "https://360zy.com/api.php/provide/vod/",
+      "vod_name": "360|点播",
+      "vod_pic": "",
+      "vod_remarks": "主流",
+      "type_name": "主流"
+    },
+    {
+      "vod_id": "https://caiji.dbzy.tv/api.php/provide/vod/at/josn",
+      "vod_name": "豆瓣|点播",
+      "vod_pic": "",
+      "vod_remarks": "主流",
+      "type_name": "主流"
+    },
+    {
+      "vod_id": "https://api.wwzy.tv/api.php/provide/vod/",
+      "vod_name": "旺旺|点播",
+      "vod_pic": "",
+      "vod_remarks": "影視綜合",
+      "type_name": "影視綜合"
+    },
+    {
+      "vod_id": "https://www.mdzyapi.com/api.php/provide/vod/",
+      "vod_name": "墨斗|点播",
+      "vod_pic": "",
+      "vod_remarks": "其他",
+      "type_name": "其他"
+    },
+    {
+      "vod_id": "https://json02.heimuer.xyz/api.php/provide/vod/",
+      "vod_name": "黑木耳|点播",
+      "vod_pic": "",
+      "vod_remarks": "影視綜合",
+      "type_name": "影視綜合"
+    },
+    {
+      "vod_id": "https://hw8.live/api.php/provide/vod/",
+      "vod_name": "华为吧|点播",
+      "vod_pic": "",
+      "vod_remarks": "其他",
+      "type_name": "其他"
+    },
+    {
+      "vod_id": "http://www.fuju2024.cc:8013/ruifenglb_api.php/provide/vod/",
+      "vod_name": "腐剧|点播",
+      "vod_pic": "",
+      "vod_remarks": "腐剧/BL",
+      "type_name": "腐剧/BL"
+    },
+    {
+      "vod_id": "https://jinyingzy.com/api.php/provide/vod/",
+      "vod_name": "金鹰|点播",
+      "vod_pic": "",
+      "vod_remarks": "主流",
+      "type_name": "主流"
+    },
+    {
+      "vod_id": "https://okzyw9.com/api.php/provide/vod/",
+      "vod_name": "OK|点播",
+      "vod_pic": "",
+      "vod_remarks": "主流",
+      "type_name": "主流"
+    },
+    {
+      "vod_id": "https://zpsps.com/api.php/provide/vod/",
+      "vod_name": "宝片|点播",
+      "vod_pic": "",
+      "vod_remarks": "其他",
+      "type_name": "其他"
+    },
+    {
+      "vod_id": "https://iqyi.xiaohuangrentv.com/api.php/provide/vod/",
+      "vod_name": "小黄人|点播",
+      "vod_pic": "",
+      "vod_remarks": "腐剧/BL",
+      "type_name": "腐剧/BL"
+    },
+    {
+      "vod_id": "https://api.niuniuzy.me/api.php/provide/vod/",
+      "vod_name": "牛牛|点播",
+      "vod_pic": "",
+      "vod_remarks": "國產/熱門",
+      "type_name": "國產/熱門"
+    },
+    {
+      "vod_id": "https://cj.yayazy.net/api.php/provide/vod/",
+      "vod_name": "丫丫|点播",
+      "vod_pic": "",
+      "vod_remarks": "國產/熱門",
+      "type_name": "國產/熱門"
+    },
+    {
+      "vod_id": "https://cj.vodimg.top/api.php/provide/vod/",
+      "vod_name": "影图|点播",
+      "vod_pic": "",
+      "vod_remarks": "影視綜合",
+      "type_name": "影視綜合"
+    },
+    {
+      "vod_id": "https://api.ukuapi.com/api.php/provide/vod/",
+      "vod_name": "U酷|点播",
+      "vod_pic": "",
+      "vod_remarks": "動漫/綜藝",
+      "type_name": "動漫/綜藝"
+    },
+    {
+      "vod_id": "https://hhzyapi.com/api.php/provide/vod",
+      "vod_name": "豪华|点播",
+      "vod_pic": "",
+      "vod_remarks": "影視綜合",
+      "type_name": "影視綜合"
+    },
+    {
+      "vod_id": "https://jszyapi.com/api.php/provide/vod",
+      "vod_name": "极速|点播",
+      "vod_pic": "",
+      "vod_remarks": "影視綜合",
+      "type_name": "影視綜合"
+    },
+    {
+      "vod_id": "https://suoniapi.com/api.php/provide/vod/",
+      "vod_name": "索尼|点播",
+      "vod_pic": "",
+      "vod_remarks": "動漫/綜藝",
+      "type_name": "動漫/綜藝"
+    },
+    {
+      "vod_id": "https://ikunzyapi.com/api.php/provide/vod/",
+      "vod_name": "ikun|点播",
+      "vod_pic": "",
+      "vod_remarks": "動漫/綜藝",
+      "type_name": "動漫/綜藝"
+    },
+    {
+      "vod_id": "http://cj.ffzyapi.com/api.php/provide/vod/",
+      "vod_name": "非凡|点播",
+      "vod_pic": "",
+      "vod_remarks": "影視綜合",
+      "type_name": "影視綜合"
+    },
+    {
+      "vod_id": "https://cj.lziapi.com/api.php/provide/vod/",
+      "vod_name": "量子|点播",
+      "vod_pic": "",
+      "vod_remarks": "其他",
+      "type_name": "其他"
+    },
+    {
+      "vod_id": "https://bfzyapi.com/api.php/provide/vod/",
+      "vod_name": "暴风|点播",
+      "vod_pic": "",
+      "vod_remarks": "其他",
+      "type_name": "其他"
+    },
+    {
+      "vod_id": "https://www.hongniuzy2.com/api.php/provide/vod/",
+      "vod_name": "红牛|点播",
+      "vod_pic": "",
+      "vod_remarks": "其他",
+      "type_name": "其他"
+    },
+    {
+      "vod_id": "https://caiji.kczyapi.com/api.php/provide/vod/from/kcm3u8/",
+      "vod_name": "快车|点播",
+      "vod_pic": "",
+      "vod_remarks": "其他",
+      "type_name": "其他"
+    },
+    {
+      "vod_id": "http://sdzyapi.com/api.php/provide/vod/",
+      "vod_name": "闪电|点播",
+      "vod_pic": "",
+      "vod_remarks": "其他",
+      "type_name": "其他"
+    },
+    {
+      "vod_id": "https://m3u8.apiyhzy.com/api.php/provide/vod/",
+      "vod_name": "樱花|点播",
+      "vod_pic": "",
+      "vod_remarks": "動漫/綜藝",
+      "type_name": "動漫/綜藝"
+    },
+    {
+      "vod_id": "https://collect.wolongzyw.com/api.php/provide/vod/",
+      "vod_name": "卧龙|点播",
+      "vod_pic": "",
+      "vod_remarks": "動漫/綜藝",
+      "type_name": "動漫/綜藝"
+    },
+    {
+      "vod_id": "https://www.huyaapi.com/api.php/provide/vod/",
+      "vod_name": "虎牙|点播",
+      "vod_pic": "",
+      "vod_remarks": "動漫/綜藝",
+      "type_name": "動漫/綜藝"
+    },
+    {
+      "vod_id": "https://p2100.net/api.php/provide/vod/",
+      "vod_name": "飘零|点播",
+      "vod_pic": "",
+      "vod_remarks": "其他",
+      "type_name": "其他"
+    },
+    {
+      "vod_id": "https://api.wujinapi.com/api.php/provide/vod/",
+      "vod_name": "无尽|点播",
+      "vod_pic": "",
+      "vod_remarks": "其他",
+      "type_name": "其他"
+    },
+    {
+      "vod_id": "https://subocaiji.com/api.php/provide/vod/",
+      "vod_name": "速博|点播",
+      "vod_pic": "",
+      "vod_remarks": "影視綜合",
+      "type_name": "影視綜合"
+    },
+    {
+      "vod_id": "https://caiji.moduapi.cc/api.php/provide/vod/",
+      "vod_name": "魔都|点播",
+      "vod_pic": "",
+      "vod_remarks": "影視綜合",
+      "type_name": "影視綜合"
+    },
+    {
+      "vod_id": "http://zuidazy.me/api.php/provide/vod/",
+      "vod_name": "最大|点播",
+      "vod_pic": "",
+      "vod_remarks": "主流",
+      "type_name": "主流"
+    },
+    {
+      "vod_id": "https://hhzyapi.com/api.php/provide/vod/",
+      "vod_name": "火狐|点播",
+      "vod_pic": "",
+      "vod_remarks": "影視綜合",
+      "type_name": "影視綜合"
+    },
+    {
+      "vod_id": "https://api.xinlangapi.com/xinlangapi.php/provide/vod/",
+      "vod_name": "新浪|点播",
+      "vod_pic": "",
+      "vod_remarks": "國產/熱門",
+      "type_name": "國產/熱門"
+    }
+  ]
+}

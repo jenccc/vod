@@ -2,38 +2,65 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-    <meta charset="UTF-8">
-    <title>XPTV 頻道清單</title>
-    <style>
-        body { font-family: sans-serif; background: #f5f5f5; padding: 2rem; }
-        .channel { background: white; margin: 1rem 0; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        .channel img { height: 40px; vertical-align: middle; margin-right: 10px; }
-        .channel a { font-size: 1.2rem; text-decoration: none; color: #0077cc; }
-    </style>
+  <meta charset="UTF-8">
+  <title>分類聚合 VOD 源</title>
+  <style>
+    body { font-family: sans-serif; background: #f5f5f5; padding: 2rem; }
+    .group { margin-top: 2rem; }
+    .channel { background: white; margin: 0.5rem 0; padding: 1rem; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    .channel img { height: 40px; vertical-align: middle; margin-right: 10px; }
+    .channel a { font-size: 1.1rem; text-decoration: none; color: #0077cc; }
+    input[type="text"] { padding: 0.5rem; width: 100%; max-width: 400px; margin-bottom: 1rem; font-size: 1rem; }
+  </style>
 </head>
 <body>
-    <h1>📺 XPTV 頻道清單</h1>
-    <div id="vod-list">載入中...</div>
+  <h1>📺 分類聚合 VOD 點播源</h1>
+  <input type="text" id="search" placeholder="搜尋名稱...">
+  <div id="container">載入中...</div>
 
-    <script>
-        fetch('https://raw.githubusercontent.com/fangkuia/XPTV/main/CMS/TV.json')
-            .then(res => res.json())
-            .then(data => {
-                const container = document.getElementById('vod-list');
-                container.innerHTML = "";
-                data.forEach(item => {
-                    const div = document.createElement("div");
-                    div.className = "channel";
-                    div.innerHTML = `
-                        <img src="${item.logo || ''}" onerror="this.style.display='none'">
-                        <a href="${item.url}" target="_blank">${item.name}</a>
-                    `;
-                    container.appendChild(div);
-                });
-            })
-            .catch(err => {
-                document.getElementById('vod-list').innerText = "載入失敗：" + err;
-            });
-    </script>
+  <script>
+    const grouped = {};
+    fetch('./VOD_Grouped_Source.json')
+      .then(res => res.json())
+      .then(data => {
+        data.list.forEach(item => {
+          const cat = item.type_name || "其他";
+          if (!grouped[cat]) grouped[cat] = [];
+          grouped[cat].push(item);
+        });
+        render(grouped);
+      });
+
+    function render(grouped) {
+      const container = document.getElementById("container");
+      container.innerHTML = "";
+      for (const group in grouped) {
+        const section = document.createElement("div");
+        section.className = "group";
+        const title = document.createElement("h2");
+        title.innerText = group;
+        section.appendChild(title);
+        grouped[group].forEach(item => {
+          const div = document.createElement("div");
+          div.className = "channel";
+          div.innerHTML = \`
+            <img src="\${item.vod_pic || ''}" onerror="this.style.display='none'">
+            <a href="\${item.vod_id}" target="_blank">\${item.vod_name}</a>
+          \`;
+          section.appendChild(div);
+        });
+        container.appendChild(section);
+      }
+    }
+
+    document.getElementById("search").addEventListener("input", function() {
+      const keyword = this.value.toLowerCase();
+      const filtered = {};
+      for (const group in grouped) {
+        filtered[group] = grouped[group].filter(item => item.vod_name.toLowerCase().includes(keyword));
+      }
+      render(filtered);
+    });
+  </script>
 </body>
 </html>
